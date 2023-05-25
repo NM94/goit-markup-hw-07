@@ -17,7 +17,7 @@ body {
 .container {
   min-width: 320px;
   max-width: 428px;
-  padding: 0 16px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
@@ -28,7 +28,6 @@ body {
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
   }
 }
 img {
@@ -665,7 +664,6 @@ ul {
   fill: currentColor;
 }
 .list-costumers {
-  justify-content: flex-start;
   column-gap: 16px;
 }
 @media only screen and (min-width: 768px) {
@@ -697,6 +695,7 @@ ul {
 @media only screen and (min-width: 768px) {
   .main-footer-container {
     align-items: baseline;
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -730,7 +729,6 @@ ul {
   margin-bottom: 16px;
 }
 .container-logo {
-  margin: 0 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -750,7 +748,7 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 72px 94px;
+  margin: 72px auto;
 }
 @media only screen and (min-width: 768px) {
   .footer-social {
@@ -777,6 +775,7 @@ ul {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .subscribe-container {
@@ -791,11 +790,18 @@ ul {
 }
 .subscribe-label {
   display: flex;
-  margin-right: 24px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .subscribe-label {
+    margin-right: 24px;
+    width: fit-content;
+  }
 }
 .subscribe-input {
   height: 40px;
   padding: 8px 16px;
+  width: 100%;
 
   color: var(--white-txt-cl);
   background-color: transparent;
@@ -819,6 +825,7 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .subscribe-form {
