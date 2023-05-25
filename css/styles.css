@@ -340,7 +340,7 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-section/Dark-bg_mob@1x.jpg);
+    url(../images/hero-section/dark_mob@1x.jpg);
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -357,7 +357,7 @@ ul {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-section/Dark-bg_mob@2x.jpg);
+      url(../images/hero-section/dark_mob@2x.jpg);
   }
 }
 @media only screen and (min-width: 430px) {
@@ -366,20 +366,21 @@ ul {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-section/Dark-bg_tab@1x.jpg);
+      url(../images/hero-section/dark_tab@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-section/dark_tab@2x.jpg);
+    }
   }
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-img {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-section/Dark-bg_tab@2x.jpg);
-  }
-}
+
 @media only screen and (min-width: 770px) {
   .hero-img {
     background-image: linear-gradient(
@@ -388,24 +389,26 @@ ul {
       ),
       url(../images/hero-section/people-office_desk@1x.jpg);
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-img {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-section/people-office_desk@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-section/people-office_desk@2x.jpg);
+    }
   }
 }
+
 .whatdoing-section {
   display: none;
 }
 @media only screen and (min-width: 1158px) {
   .whatdoing-section {
     display: block;
+    padding-bottom: 120px;
   }
 }
 
@@ -689,6 +692,7 @@ ul {
 .main-footer-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
   .main-footer-container {
@@ -790,7 +794,6 @@ ul {
   margin-right: 24px;
 }
 .subscribe-input {
-  width: 398px;
   height: 40px;
   padding: 8px 16px;
 
